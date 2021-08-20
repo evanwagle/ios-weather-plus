@@ -1,0 +1,275 @@
+@font-face { 
+  font-family: SF-Light; 
+  font-weight: normal;
+  src: url('res/SFNSText-Light.otf'); 
+} 
+@font-face {
+  font-family: SF-Ultralight;
+  font-weight: lighter;
+  src: url('res/SFNSDisplay-Ultralight.otf');
+}
+/* Define colors */
+:root {
+  --gray: #ADD8F0;
+}
+
+/* General */
+html {
+  font-family: SF-Light, sans-serif;
+  font-weight: normal;
+}
+h1 {
+  font-size: 110px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-family: SF-Ultralight;
+}
+h2 {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  font-size: 38px;
+}
+h4 {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 20px;
+}
+.top-data-container {
+  margin-top: 120px;
+}
+.top-temp {
+  margin: 0 auto;
+  width: 170px;
+}
+.description {
+  text-transform: capitalize;
+}
+.high-temp, .low-temp {
+  display: inline;
+  font-size: 16px;
+}
+.hourly-container {
+  margin-top: 120px;
+  border: 1px solid var(--gray);
+  border-left: 0px;
+  border-right: 0px;
+  height: 120px;
+  display: flex;
+  flex-direction: row;
+  padding: 10px 20px;
+}
+.hour {
+  text-align: center;
+  margin: 0px 6px;
+}
+
+/* Formatting the days */
+.daily-container {
+  padding: 10px 20px;
+}
+.day {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.day-of-week {
+  width: 250px;
+}
+.min-temp {
+  color: #cecece;
+}
+.day img {
+  margin-right: 150px;
+}
+.max-temp {
+  margin-right: 25px;
+}
+
+/* Extended description styling */
+.extended-description {
+  border: 1px solid var(--gray);
+  border-left: 0px;
+  border-right: 0px;
+  padding: 15px 20px;
+}
+.extended-description p {
+  margin: 0;
+  font-size: 20px;
+}
+
+/* Air Quality Container */
+h5 {
+  margin: 0;
+  color: var(--gray);
+  display: inline;
+  font-size: 14px;
+}
+h5 a {
+  text-decoration: none;
+  color: var(--gray) !important;
+}
+.air-quality-container {
+  padding: 10px 20px;
+}
+#us-index {
+  float: right;
+}
+h3 {
+  font-size: 30px;
+  margin: 0;
+  margin-top: 3px;
+}
+p {
+  margin: 5px;
+  font-size: 22px;
+}
+.aqi-bar {
+  border-radius: 10px;
+  height: 13px;
+  margin: 7px 0px;
+  background: rgb(1,221,112);
+  background: linear-gradient(90deg, 
+  rgba(1,221,112,1) 8%, 
+  rgba(136,226,67,1) 12%, 
+  rgba(254,221,11,1) 17%, 
+  rgba(254,154,11,1) 25%, 
+  rgba(250,39,68,1) 33%, 
+  rgba(170,2,252,1) 50%, 
+  rgba(128,22,42,1) 71%);
+}
+#aqi-marker {
+  background-color: white;
+  border: 5px solid #579DC8;
+  border-radius: 10px;
+  height: 12px;
+  width: 12px;
+  position: absolute;
+  margin-top: 3px;
+}
+
+/* Misc Info Container */
+.misc-info-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0px 20px;
+}
+.item {
+  width: 250px;
+  display: inline-block;
+}
+.long-border {
+  border: 1px solid var(--gray);
+  border-left: 0px;
+  border-right: 0px;
+  width: 100%;
+  padding: 10px 0px;
+}
+.no-border {
+  padding: 10px 0px;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  /* background: rgb(125, 184, 220); */
+  background-image: url(res/blue-sky.jpg);
+
+  font-size: 120%;
+  /* background-image: url("https://source.unsplash.com/1600x900/?new-york-city"); */
+}
+.card {
+  border-radius: 5px;
+  padding: 0;
+  max-width: 600px;
+  width: 900px;
+  color: white;
+  background: #579DC8;
+  opacity: 80%;
+}
+
+/* Open maps on bottom of page */
+.open-maps {
+  padding: 15px 20px;
+}
+.open-maps p {
+  margin: 0;
+  font-size: 20px;
+}
+a {
+  color: white;
+}
+a:visited {
+  color: white;
+}
+/* Hiding card before searching */
+/* .weather.blank-search {
+  visibility: hidden;
+  max-height: 0px;
+} */
+
+/* Changing Location */
+.change-location-container {
+  border: 1px solid var(--gray);
+  border-left: 0px;
+  border-right: 0px;
+  display: flex;
+  flex-direction: row;
+  padding: 10px 20px;
+}
+.location-dot {
+  background-color: var(--gray);
+  height: 14px;
+  width: 14px;
+  border-radius: 14px;
+  margin: 5px 5px;
+  margin-top: 10px;
+}
+.dot-container {
+  display: flex;
+  flex-direction: row;
+  height: 32px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+#list {
+  float: right;
+}
+
+/* Search bar */
+input.search-bar {
+  border-radius: 10px;
+  outline: none;
+  border-radius: 25px;
+  font-size: 120%;
+  padding: 4px 12px;
+  height: 28px;
+  width: 300px;
+  opacity: 85%;
+}
+button {
+  margin: 0.5em;
+  border-radius: 50%;
+  border: none;
+  height: 40px;
+  width: 40px;
+  outline: none;
+  cursor: pointer;
+  margin-right: 135px;
+  opacity: 85%;
+
+}
+button:hover{
+  background-color: rgb(159, 159, 159);
+  transition: 0.3s ease-in-out;
+}
+.search {
+  padding: 10px 20px;
+}
+.search a {
+  text-decoration: none;
+}

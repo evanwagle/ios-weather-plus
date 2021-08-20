@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="title">Weather</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="./script.js" defer></script>
+</head>
+
+<body>
+  <div class="card">
+
+    <div class="weather blank-search">
+      <div class="top-data-container">
+        <h2 class="city">Location</h2>
+        <h4 class="description">Description</h4>
+        <div class="top-temp">
+          <h1 class="temp">999°</h1>
+          <h4 class="max-min-temp">H:999° L:99°</h4>
+        </div>
+      </div>
+      <div class="hourly-container">
+        <!-- <div class="hour">
+          <p>Now</p>
+          <img class="icon" src="http://openweathermap.org/img/wn/01d.png" alt="">
+          <p class="temp">99°</p>
+        </div> -->
+      </div>
+      <div class="daily-container">
+        <!-- <div class="day">
+          <p class="day-of-week">Monday</p>
+          <img class="icon" src="http://openweathermap.org/img/wn/01d.png" alt="">
+          <p class="max-temp">99°</p>
+          <p class="min-temp">99°</p>
+        </div> -->
+      </div>
+      <div class="extended-description">
+        <!-- <p>
+          Today: (description) currently. The high will be 99° and the low will be 99°.
+        </p> -->
+      </div>
+      <div class="air-quality-container">
+        <h5>AIR QUALITY</h5>
+        <h5 id="us-index">AQI (US)</h5>
+        <h3 class="aqi"></h3>
+        <div id="aqi-marker"></div>
+        <div class="aqi-bar"></div>
+        <h5>
+          <a href="https://openweathermap.org/api/air-pollution" target="_blank">More data from OpenWeatherMap ⟩</a>
+        </h5>
+      </div>
+      <div class="misc-info-container">
+        <div class="long-border">
+          <div class="item">
+            <h5>SUNRISE</h5>
+            <h3 class="misc-data sunrise">99:99</h3>
+          </div>
+          <div class="item">
+            <h5>SUNSET</h5>
+            <h3 class="misc-data sunset">99:99</h3>
+          </div>
+
+        </div>
+
+        <div class="no-border">
+          <div class="item">
+            <h5>CHANCE OF RAIN</h5>
+            <h3 class="misc-data chance-of-rain">999%</h3>
+          </div>
+          <div class="item">
+            <h5>HUMIDITY</h5>
+            <h3 class="misc-data humidity">99%</h3>
+          </div>
+        </div>
+
+        <div class="long-border">
+          <div class="item">
+            <h5>WIND</h5>
+            <h3 class="misc-data wind">ssw: 99 mph</h3>
+          </div>
+          <div class="item">
+            <h5>FEELS LIKE</h5>
+            <h3 class="misc-data feels-like">999°</h3>
+          </div>
+        </div>
+
+        <div class="no-border">
+          <div class="item">
+            <h5>PRECIPITATION</h5>
+            <h3 class="misc-data precipitation">99 in</h3>
+          </div>
+          <div class="item">
+            <h5>PRESSURE</h5>
+            <h3 class="misc-data pressure">99.99 inHg</h3>
+          </div>
+        </div>
+
+        <div class="long-border">
+          <div class="item">
+            <h5>VISIBILITY</h5>
+            <h3 class="misc-data visibility">99 mi</h3>
+          </div>
+          <div class="item">
+            <h5>UV INDEX</h5>
+            <h3 class="misc-data uvi">9</h3>
+          </div>
+        </div>
+      </div>
+      <div class="open-maps">
+        <p>Weather for Location. <a href="" target="_blank">Open in Maps</a></p>
+      </div>
+
+      <div class="change-location-container">
+        <div class="dot-container">
+          <!-- <a href="file:///Users/evanw/Documents/GitHub/ios-weather-plus/index.html" title="Home">
+            <div class="location-dot"></div>
+          </a> -->
+        </div>
+        <img id="list" src="res/list_white_36dp.svg" alt="list">
+      </div>
+
+      <div class="search">
+        <input type="text" id="search-bar" class="search-bar" placeholder="Search Locations">
+        <button>
+          <img src="https://img.icons8.com/material-outlined/24/000000/search--v1.png" height="20px" width="20px" />
+        </button>
+        <a id="add-btn" href="">Add</a>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
